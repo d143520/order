@@ -21,6 +21,7 @@ killTomcat()
     fi
 }
 echo "======go into deploy.sh"
+source /etc/profile
 echo $MAVEN_HOME
 echo $PATH
 echo "======Starting the deploy.sh"
