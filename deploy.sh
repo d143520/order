@@ -20,7 +20,7 @@ killTomcat()
       kill -9 $pid
     fi
 }
-
+echo "======go into deploy.sh"
 echo $MAVEN_HOME
 echo $PATH
 echo "======Starting the deploy.sh"
