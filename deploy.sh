@@ -20,6 +20,9 @@ killTomcat()
       kill -9 $pid
     fi
 }
+
+echo $MAVEN_HOME
+echo $PATH
 echo "======Starting the deploy.sh"
 cd $PROJ_PATH/order
 mvn clean install
