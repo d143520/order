@@ -34,7 +34,7 @@ pipeline {
             steps {
                 echo 'publish code'
 
-                deploy adapters: [tomcat9(credentialsId: 'cb48045d-8796-49c1-86b1-5569ed6f886a', path: '', url: 'http://192.168.18.198:8090')], contextPath: '/myoder', war: 'target/*.war'
+                deploy adapters: [tomcat9(credentialsId: 'cb48045d-8796-49c1-86b1-5569ed6f886a', path: '', url: 'http://192.168.18.198:8090')], contextPath: '/myoder22', war: 'target/*.war'
 
             }
 
