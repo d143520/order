@@ -22,6 +22,23 @@ pipeline {
             }
         }
 
+        stage('check code') {
+            steps {
+                echo 'check code'
+
+                script {
+                    //引入在jenkins中配置的工具名称
+                    scannerHome = tool 'sonar-scanner'
+                }
+                //引入在jenkins中配置的snoarqube的server name
+                withSonarQubeEnv('sonarqube-srv1') {
+                    sh "${scannerHome}/bin/sonar-scanner"
+                }
+
+            }
+        }
+
+
         stage('build code') {
             steps {
                 echo 'build code'
