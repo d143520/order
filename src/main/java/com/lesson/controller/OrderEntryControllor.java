@@ -294,4 +294,24 @@ public class OrderEntryControllor {
         return "jsp/categoryList.jsp";
     }
 
+    /**
+     * 测试snaquebe的检测功能
+     *
+     * @param
+     * @return
+     */
+    @RequestMapping(value = "/sonaqueTest")
+    public String sonaqueTest() {
+        String a ="1000";
+        a="1000";
+
+
+        int b = 100/0;
+
+
+        return "1234";
+    }
+
+
+
 }
